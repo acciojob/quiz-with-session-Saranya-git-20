@@ -53,6 +53,7 @@ function renderQuestions() {
 
       if (userAnswers[i] === choice) {
         radio.checked = true;
+		radio.setAttribute("checked", "true");
       }
 
       radio.addEventListener("change", () => {
